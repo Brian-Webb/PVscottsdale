@@ -1,0 +1,20 @@
+label {
+  font-size:1.3rem;
+}
+
+/* remove row button styles */
+.remove-row-wrapper .remove-row {
+  background-color:#fff2f2;
+  color:#ff0000;
+  font-size:1.3rem;
+  display:block;
+}
+.remove-row-wrapper .remove-row:hover {
+  color:#cc0000;
+}
+
+/* move up row button styles */
+.move-row-up {
+  font-size:1rem;
+  display:block;
+}

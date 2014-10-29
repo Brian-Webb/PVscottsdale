@@ -7,7 +7,6 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-wordpress-site/
 
 # Windows Installer files
 *.cab
@@ -27,8 +26,7 @@ wordpress-site/
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 
 # Thumbnails
 ._*
@@ -43,9 +41,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# File extensions to ignore
-.jpg
-.gif
-.png
-.bmp

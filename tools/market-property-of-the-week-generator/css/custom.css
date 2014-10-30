@@ -25,13 +25,16 @@ body {
 	box-shadow:1px 1px 3px #999;
 	border:1px solid #b66300;
 }
-#generate-code {
+.generate-code {
 	margin-top:35px;
 }
 input[type='text'],
 input[type='number'],
 textarea {
 	box-shadow:1px 1px 3px #999;
+}
+textarea[name='description'] {
+  height:200px;
 }
 
 /* panel colors */
@@ -67,6 +70,11 @@ textarea {
 	  font-size:1rem;
 	  display:block;
 	}
+
+/* results styles */
+#html-results {
+  height:300px;
+}
 
 /* text styles */
 h1 {

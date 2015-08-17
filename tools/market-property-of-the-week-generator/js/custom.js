@@ -92,12 +92,19 @@ $('#property-of-the-week-form').on('valid.fndtn.abide', function() {
     $.get('htmltemplate.html').done(function( data ) {
       htmlTemplate = data;
 
+      //check if mls-num is empty
+      if(values['mls-num'] != '') {
+        mls_replacment = values['mls-num'];
+      } else {
+        mls_replacment = '';
+      }
+
       //replace placeholders in html template
       htmlTemplate = htmlTemplate.replace('{price}', values['price']);
-      htmlTemplate = htmlTemplate.replace('{mls-num}', values['mls-num']);
       htmlTemplate = htmlTemplate.replace('{address}', values['address']);
       htmlTemplate = htmlTemplate.replace('{description}', values['description']);
       htmlTemplate = htmlTemplate.replace('{feature-list}', values['feature-list']);
+      htmlTemplate = htmlTemplate.replace('{mls-num}', mls_replacment);
 
       //set results textarea value to the final resulting html
       $('#html-results').val(htmlTemplate);
